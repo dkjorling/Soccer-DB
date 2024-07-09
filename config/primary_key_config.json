@@ -1,0 +1,1 @@
+{"seasons": "season", "ls": "ls_id", "leagues": "lg_id", "tls": "tls_id", "teams": "tid", "ptls": "ptls_id", "players": "pid", "matches": "match_id", "team_matches": "team_match", "player_matches": "player_match", "keeper_matches": "keeper_match", "team_values": "tv_id", "player_values": "pv_id"}

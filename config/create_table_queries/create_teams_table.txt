@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS teams (
+    tid VARCHAR(8) NOT NULL,
+    team_name VARCHAR(40),
+    api_id INTEGER,
+    code VARCHAR(3),
+    country VARCHAR(30),
+    city VARCHAR(50),
+    venue VARCHAR(70),
+    capacity INTEGER,
+    logo_url VARCHAR(60),
+    venue_url VARCHAR(60),
+    lat REAL,
+    lon REAL,
+    PRIMARY KEY (tid)
+);

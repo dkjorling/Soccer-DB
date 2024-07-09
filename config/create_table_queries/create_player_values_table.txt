@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS player_values (
+    pv_id VARCHAR(14) NOT NULL,
+    pid VARCHAR(8),
+    tid VARCHAR(8),
+    lg_id INT,
+    player_name VARCHAR(50),
+    valuation INT,
+    age INT,
+    PRIMARY KEY (pv_id),
+    FOREIGN KEY (pid) REFERENCES players(pid),
+    FOREIGN KEY (tid) REFERENCES teams(tid),
+    FOREIGN KEY (lg_id) REFERENCES leagues(lg_id)
+);

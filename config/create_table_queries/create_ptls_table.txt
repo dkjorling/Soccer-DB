@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS ptls (
+    ptls_id VARCHAR(28) NOT NULL,
+    tls_id VARCHAR(17),
+    pid VARCHAR(8),
+    PRIMARY KEY (ptls_id),
+    FOREIGN KEY (tls_id) REFERENCES team_league_seasons(tls_id),
+    FOREIGN KEY (pid) REFERENCES players(pid)
+);

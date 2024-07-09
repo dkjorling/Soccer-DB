@@ -1,0 +1,11 @@
+data/
+old_files/
+__pycache__/
+venv/
+todo.txt
+.env
+.DS_Store
+.ipynb_checkpoints/
+*.log
+*.pyc
+*.ipynb

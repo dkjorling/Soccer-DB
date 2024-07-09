@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS team_values (
+    tv_id VARCHAR(14) NOT NULL,
+    tid_tm INT,
+    tid VARCHAR(8),
+    team_name VARCHAR(40),
+    squad_size INT,
+    avg_value INT,
+    total_value INT,
+    PRIMARY KEY (tv_id),
+    FOREIGN KEY (tid) REFERENCES teams(tid)
+);

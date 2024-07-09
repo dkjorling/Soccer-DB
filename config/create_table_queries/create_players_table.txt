@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS players (
+    pid VARCHAR(8) NOT NULL,
+    player_name VARCHAR(50),
+    api_id VARCHAR(8),
+    dob DATE,
+    birth_city VARCHAR(50),
+    birth_country VARCHAR(40),
+    nationality VARCHAR(40),
+    height FLOAT,
+    weight FLOAT,
+    photo VARCHAR(70),
+    PRIMARY KEY (pid)
+);

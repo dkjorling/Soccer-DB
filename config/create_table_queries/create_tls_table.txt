@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS tls (
+    tls_id VARCHAR(17) NOT NULL,
+    tid VARCHAR(8),
+    lg_id INTEGER,
+    season INTEGER,
+    season_long VARCHAR(12),
+    ls_id VARCHAR(15),
+    has_adv_stats VARCHAR(10),
+    PRIMARY KEY (tls_id),
+    FOREIGN KEY (tid) REFERENCES teams(tid),
+    FOREIGN KEY (lg_id) REFERENCES leagues(lg_id),
+    FOREIGN KEY (season) REFERENCES seasons(season),
+    FOREIGN KEY (ls_id) REFERENCES league_seasons(ls_id)
+);
